@@ -1,5 +1,5 @@
 #!/bin/bash
-# version 0.0.2
+# version 0.0.4
 # Author: Jaime Galvez
 #&COPY;2024 
 #GNU/GPL Licence
