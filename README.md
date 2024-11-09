@@ -4,8 +4,9 @@ This script automates the installation of Nextcloud along with Apache, MariaDB, 
 
 ## Prerequisites
 
- Root Access: This script must be executed with root privileges.
- Supported System: Ubuntu 20.04 or newer (adjustments may be required for other distributions).
+-  Root Access: This script must be executed with root privileges.
+
+- Supported System: Ubuntu 20.04 or newer (adjustments may be required for other distributions).
 
 ## Installation
 
