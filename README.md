@@ -1,4 +1,4 @@
-## Nextcloud Installation Script
+<h1><strong>Nextcloud Installation Script</strong></h1>
 
 This script automates the installation of Nextcloud along with Apache, MariaDB, PHP, and other necessary services. Designed for Ubuntu-based systems, it sets up a fully functional Nextcloud instance with minimal manual intervention.
 Prerequisites
