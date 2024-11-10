@@ -95,7 +95,7 @@ mysql -u root -e "FLUSH PRIVILEGES;"
 
 # Install PHP and necessary modules
 echo "Installing PHP  and modules..."
-sudo apt install -y php php-gd php-json php-mbstring php-curl php-xml php-zip php-mysql php-intl php-bz2 php-imagick php-fpm php-cli libapache2-mod-php php-sqlite3 php-pgsql
+sudo apt install -y php7.4 php7.4-gd php7.4-json php7.4-mbstring php7.4-curl php7.4-xml php7.4-zip php7.4-mysql php7.4-intl php7.4-bz2 php7.4-imagick php7.4-fpm php7.4-cli libapache2-mod-php php7.4-sqlite3 php7.4-pgsql
 
 # Configure PHP for Nextcloud
 echo "Configuring PHP..."
