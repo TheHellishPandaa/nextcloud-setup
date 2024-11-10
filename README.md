@@ -30,3 +30,5 @@ Run the Script as Root:
 ## License
 
 This project is licensed under the GNU General Public License v3.0. 
+
+this script supported Nextcloud 22.0.0 
