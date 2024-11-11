@@ -120,4 +120,4 @@ systemctl restart apache2
 
 # Finish
 echo "Nextcloud installation complete."
-echo "Please access http://$DOMAIN to complete setup in the browser."
+echo "Please access http://$DOMAIN/nextcloud to complete setup in the browser."
