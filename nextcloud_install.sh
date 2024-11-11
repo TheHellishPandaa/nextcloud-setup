@@ -113,30 +113,6 @@ mv nextcloud $NEXTCLOUD_PATH
 chown -R www-data:www-data $NEXTCLOUD_PATH
 chmod -R 755 $NEXTCLOUD_PATH
 
-# Configure Apache for Nextcloud
-echo "Configuring Apache for Nextcloud..."
-cat <<EOL > /etc/apache2/sites-available/nextcloud.conf
-<VirtualHost *:80>
-    ServerAdmin admin@$DOMAIN
-    DocumentRoot $NEXTCLOUD_PATH
-    ServerName $DOMAIN
-
-    <Directory $NEXTCLOUD_PATH>
-        Options +FollowSymlinks
-        AllowOverride All
-        Require all granted
-        <IfModule mod_dav.c>
-            Dav off
-        </IfModule>
-        SetEnv HOME $NEXTCLOUD_PATH
-        SetEnv HTTP_HOME $NEXTCLOUD_PATH
-    </Directory>
-
-    ErrorLog \${APACHE_LOG_DIR}/nextcloud_error.log
-    CustomLog \${APACHE_LOG_DIR}/nextcloud_access.log combined
-</VirtualHost>
-EOL
-
 # Enable Nextcloud configuration and necessary Apache modules
 a2ensite nextcloud.conf
 a2enmod rewrite headers env dir mime setenvif
